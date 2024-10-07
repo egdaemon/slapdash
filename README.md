@@ -7,3 +7,12 @@ usage agents quickly and restricts them.
 by taking this approach slashdash in its default settings protect an endpoint from a large number of attackers
 while using O(1) memory, minimal allocations, sub millisecond response times, and a entirely gracefuly failure
 scenario all entirely in application, no extra servers, coordinate, or databases needed.
+
+
+```golang
+limit := slapdash.NewLimiter(rate.NewLimiter(rate.Every(time.Millisecond), 1))
+if err := limit.Allow(context.Background(), []byte("user id")); err != nil {
+  log.Println("BLOCKED", err)
+  return
+}
+```
