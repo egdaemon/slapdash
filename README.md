@@ -5,8 +5,8 @@ instead of having to track agents precisely it uses bloomfilters to rapidly iden
 usage agents quickly and restricts them.
 
 by taking this approach slashdash in its default settings protect an endpoint from a large number of attackers
-while using O(1) memory, minimal allocations, sub millisecond response times, and a entirely gracefuly failure
-scenario all entirely in application, no extra servers, coordinate, or databases needed.
+while using O(1) memory, minimal allocations, sub millisecond response times, and a entirely graceful failure
+scenario all entirely in application, no extra servers, coordination, or databases needed.
 
 
 ```golang
