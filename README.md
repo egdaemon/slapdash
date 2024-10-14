@@ -1,6 +1,6 @@
 # Never has rate limiting felt so damn good.
 
-slapdash is as the name implies approaches rate limiting in a careless, hasty, or haphazard manner.
+slapdash, as the name implies, approaches rate limiting in a careless, hasty, or haphazard manner.
 instead of having to track agents precisely it uses bloomfilters to rapidly identify the heaviest
 usage agents quickly and restricts them.
 
